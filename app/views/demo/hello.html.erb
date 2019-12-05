@@ -1,0 +1,38 @@
+<h1>Demo#hello</h1>
+<div>This file is hello.html.erb</div>
+
+<br/>
+<%= 1+1 %>
+
+<br/>
+<br/>
+<% target = "shiba" %>
+<%= "Hello, #{target} "%>
+
+<br/>
+<br/>
+<div>Ruby 3.times code print to console instead</div>
+<%=
+  3.times do |n|
+    puts n
+  end
+%>
+
+<br/>
+<br/>
+<div>Surround again erb code instead</div>
+<% @array.each do |n| %>
+  <%= n %><br/>
+<% end %>
+
+<a href="/demo/index">Take me to index page</a>
+<br/>
+<%= link_to('Link_to components to index page', {:action => 'index'}) %>
+
+<div>
+ID <%= @id %>
+PAGE <%= @page %>
+<br/>
+NEXT ID <%= params[:id].to_i + 1 %>
+NEXT PAGE <%= params[:page].to_i + 1 %>
+</div>
