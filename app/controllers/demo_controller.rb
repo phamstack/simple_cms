@@ -17,4 +17,9 @@ class DemoController < ApplicationController
   def cat
     render plain: "catnip"
   end
+
+  def subjects
+    @subjects = Subject.all
+  end
+  
 end

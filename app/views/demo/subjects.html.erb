@@ -1,0 +1,15 @@
+<div>
+  Subjects in array string representation @subjects.to_a:
+  <br/>
+  <%= @subjects.to_a %>
+  <br/>
+  <br/>
+  In good looking style, we have
+  <%= @subjects.size %>
+  subjects
+  <br/>
+  <% @subjects.each do |subject| %>
+    <%= "#{subject.id} #{subject.name} #{subject.created_at}"%>
+    <br/>
+  <% end %>
+</div>

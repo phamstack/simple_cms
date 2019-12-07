@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'demo/index'
   get 'demo/hello'
   get 'demo/cat'
+  # everytime you add a controller that renders a view
+  # you add the route
+  get 'demo/subjects'
 
   # default route, will be gone in the future
   # get ':controller(/:action(/:id))'
