@@ -18,7 +18,7 @@ class CreateSections < ActiveRecord::Migration[6.0]
   def down
     # don't need to drop indexes when dropping the whole table
     # remove_index "pages", "page_id"
-    
+
     drop_table :sections
   end
 end
